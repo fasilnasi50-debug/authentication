@@ -4,7 +4,6 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-// Initialize Firebase Admin and validate the service-account configuration.
 require("./config/firebase");
 
 const authRoutes = require("./routes/authRoutes");

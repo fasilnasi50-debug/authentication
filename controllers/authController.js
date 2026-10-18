@@ -1,6 +1,4 @@
 const { auth } = require("../config/firebase");
-
-// POST /api/auth/signup
 exports.signup = async (req, res) => {
   try {
     const { fullName, email, password } = req.body;
@@ -65,8 +63,7 @@ exports.signup = async (req, res) => {
   }
 };
 
-// POST /api/auth/signin
-// The client signs in with Firebase Authentication and sends its ID token here.
+
 exports.signin = async (req, res) => {
   try {
     const { idToken } = req.body;
